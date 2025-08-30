@@ -10,7 +10,6 @@ const ProductCard = ({product}) => {
     return product && (
         <div onClick={()=>{navigate(`/products/${product.category.toLowerCase()}/${product._id}`); scrollTo(0,0)}} className="border border-gray-300 rounded-lg p-4 bg-white w-full max-w-xs sm:max-w-sm shadow-sm">
             <div className="group cursor-pointer flex items-center justify-center px-2">
-            <div className="group cursor-pointer flex items-center justify-center px-2">
                 <img className="group-hover:scale-105 transition max-w-26 md:max-w-36" src={product.image[0]} alt={product.name} />
             </div>
             <div className="text-gray-500/60 text-sm">
