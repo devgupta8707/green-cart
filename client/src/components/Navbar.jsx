@@ -57,7 +57,7 @@ const Navbar = () => {
                     <button className="absolute -top-2 -right-3 text-xs text-white bg-primary w-[18px] h-[18px] rounded-full">{getCartCount()}</button>
                 </div>
     <button onClick={() => open ? setOpen(false) : setOpen(true)} aria-label="Menu" className="">
-                {/* Menu Icon SVG */}
+               
                 <img src={assets.menu_icon} alt="menu"/>
             </button>            
 </div>
@@ -70,7 +70,7 @@ const Navbar = () => {
                 <NavLink to='/' onClick={()=>setOpen(false)}>Home</NavLink>
                 <NavLink to='/products' onClick={()=>setOpen(false)}>All Product</NavLink>
                 {user && 
-                <NavLink to='/products' onClick={()=>setOpen(false)}>My Orders</NavLink>
+                <NavLink to='/my-orders' onClick={()=>setOpen(false)}>My Orders</NavLink>
             }
               <NavLink to='/' onClick={()=>setOpen(false)}>Contact</NavLink>
 
